@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 const colors = require('colors');
 const expressLayouts = require('express-ejs-layouts');
@@ -10,7 +12,6 @@ const flash = require('connect-flash');
 
 // Initialize express
 const app = express();
-const port = 3000;
 
 // Use EJS
 app.set('view engine', 'ejs');
@@ -18,6 +19,7 @@ app.set('view engine', 'ejs');
 // Built-in Middleware
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
+
 
 // Third-party Middleware
 app.use(expressLayouts);
@@ -75,6 +77,4 @@ app.get('/', (req, res) => {
 //     app.use(morgan('dev'));
 // }
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`.yellow.bold)
-})
+app.listen(process.env.PORT || 5000)
