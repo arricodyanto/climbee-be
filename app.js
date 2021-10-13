@@ -2,7 +2,6 @@ const express = require('express');
 const colors = require('colors');
 const expressLayouts = require('express-ejs-layouts');
 const { body, validationResult } = require('express-validator');
-const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const flash = require('connect-flash');
 
