@@ -61,9 +61,8 @@ app.get('/pembayaran', (req, res) => {
 })
 app.get('/login', (req, res) => {
     res.render('login', {
-        layout: 'layouts/main-layout',
-        title: 'Login',
-        active: '',
+        layout: 'layouts/login-layout',
+        title: 'Login'
     })
 })
 
