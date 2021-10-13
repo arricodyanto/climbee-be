@@ -72,9 +72,4 @@ app.get('/', (req, res) => {
     res.send('<h1>404</404>')
 })
 
-// Set-up
-// if (process.env.NODE_ENV === "development") {
-//     app.use(morgan('dev'));
-// }
-
 app.listen(process.env.PORT || 5000)
