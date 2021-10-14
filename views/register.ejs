@@ -1,0 +1,25 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 border border-1 ps-4 pe-4 pt-2 pb-4">
+            <h2 class="text-center">Register Page</h2>
+            <hr>
+            <form method="post" action="/register">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" name="name" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+            <p class="mt-4 mb-1">Already have an account?</p>
+            <a href="/login">Login</a>
+        </div>
+    </div>
+</div>
