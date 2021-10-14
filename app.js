@@ -46,7 +46,7 @@ app.use(passport.session())
 
 
 // Routes
-app.get('/', checkAuthenticated, (req, res) => {
+app.get('/', (req, res) => {
     res.render('index', {
         layout: 'layouts/main-layout',
         title: 'Climbee - Fashion Store',
